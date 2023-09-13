@@ -1,0 +1,152 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+   
+}
+.container{
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+.clock{
+    position: relative;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0.5rem 0.5rem 1rem grey, -0.5rem -0.5rem 1rem grey;
+    background-color: #303030;
+    border: 2px solid #222;
+}
+#circle
+{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.2rem  #222;
+    position: absolute;
+    left: 152px;
+    top: 150px;
+    z-index: 10;
+}
+.time{
+    position: relative;
+}
+.one{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0.5rem;
+    left: 59%;
+}
+.twelve{
+   position: absolute;
+   font-size: 2.5rem;
+   top: 0.5rem;
+   left: 43%;
+   color: white;
+   text-shadow: 0.2rem 0.2rem 0.2rem #222;
+}
+.three{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 8.5rem;
+    right:1rem;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
+}
+.nine{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 8.5rem;
+    left:1rem;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
+}
+.six{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 17.5rem;
+    left: 45%;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
+}
+.arrows{
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+   
+}
+
+.arrows div{
+    position: absolute;
+    left: 150px;
+    top: 140px;
+    width: 0.7rem;
+    height: 6rem;
+    background-color: white;
+  
+    border-radius: 100% 100% 0 0;
+    transform-origin: bottom center;
+    /* z-index: -1; */
+} 
+.arrows .hour{
+
+  position: absolute;
+  /* height: 6.5rem;  */
+  height: 4.5rem; 
+  transform: rotate(90deg);
+  left: 166px;
+  top: 95px;
+
+}
+.arrows .minute{
+    position: absolute;
+    left: 164px;
+    top: 74px;
+}
+.arrows .second{
+    background-color: rgb(254, 85, 70);
+    transform: rotate(270deg);
+    /* height: 4.5rem;  */
+    height: 6.5rem;
+    left: 163px;
+    top: 65px;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    bottom: 20px;
+    position: absolute;
+}
+
+footer p{
+    font-size: 15px;
+    color: grey;
+}
+
+.footer-icons a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.footer-icons a:hover{
+    color: red;
+}
